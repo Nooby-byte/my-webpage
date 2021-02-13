@@ -26,19 +26,59 @@ body{
 img:hover{
     transform: rotate3d(180);
 }
-.container{
-    text-align: center;
+.menu {
+    font-family: sans-serif;
+    position: fixed;
+    top: 0px;
+    width: 30%;
+    cursor: pointer;
+    z-index: 10;
+    background-color: plum;
+    color: purple;
 }
-#myCarousel{
-    background-color: crimson;
+
+html {
+    scroll-behavior: smooth;
 }
-#myCarousel img{
-    height: 300px;
-    margin-top: 35px;
+
+.link {
+    display: inline;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 9px;
+    padding-right: 9px;
+    font-family: monospace;
+    font-size: 15px;
 }
-.carouselInner p{
-    margin-bottom: 15px;
-    margin-top: 15px;
-    color: darkorange;
-    font-size: 18px;
+.link{
+    transition-duration: 0.4s;
+}
+.link:hover {
+    background-color: limegreen;
+    color: white;
+    font-family: sans-serif;
+    font-size: 16px;
+    text-decoration: underline;
+
+}
+#reviewH{
+    display: inline;
+    text-decoration: none !Important;
+    border-radius: 12px;
+    background-color: forestgreen;
+    color: cyan;
+    font-size: 20px;
+    border-style: none;
+    width: 25%;
+    height: 10%;
+    transition-duration: 0.5s;
+}
+#reviewH:hover{
+    background-color: white;
+    color: green;
+    text-decoration: underline;
+}
+#inspire{
+    width: 100%;
+    background: linear-gradient(skyblue 0%, cyan 50%, blue 100%)
 }
